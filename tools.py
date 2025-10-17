@@ -16,7 +16,7 @@ def save_to_txt(data: str, filename: str = "research_output.txt"):
     return f"Data successfully saved to {filename}"
 
 #once you have function wrap it as a tool. dont call function just write name of it no ().
-#you can make  a tool that calls an api
+#you can make  a tool that calls an api.
 save_tool = Tool(
     name="save_text_to_file",
     func=save_to_txt,
